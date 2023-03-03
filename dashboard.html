@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Controle - Gustavo Ono's Chocolate and Pastry Classes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Navigation menu goes here -->
+  </header>
+
+  <main>
+    <h1>Painel de Controle</h1>
+    <p>Bem-vindo(a), [nome do usuário]!</p>
+
+    <h2>Minhas Aulas</h2>
+    <ul>
+      <li><a href="#">Aula 1: Introdução ao Chocolate</a></li>
+      <li><a href="#">Aula 2: Ganache e Recheios</a></li>
+      <li><a href="#">Aula 3: Temperagem do Chocolate</a></li>
+      <!-- More lesson links go here -->
+    </ul>
+
+    <h2>Minhas Receitas</h2>
+    <ul>
+      <li><a href="#">Torta de Chocolate com Morangos</a></li>
+      <li><a href="#">Brigadeiro de Colher</a></li>
+      <li><a href="#">Bolo de Cenoura com Cobertura de Chocolate</a></li>
+      <!-- More recipe links go here -->
+    </ul>
+
+    <h2>Calculadora de Preços</h2>
+    <p>Use esta calculadora para precificar suas receitas:</p>
+    <form>
+      <div>
+        <label for="recipe-name">Nome da Receita</label>
+        <input type="text" id="recipe-name" name="recipe-name" required>
+      </div>
+
+      <div>
+        <label for="recipe-cost">Custo dos Ingredientes (R$)</label>
+        <input type="number" id="recipe-cost" name="recipe-cost" min="0" step="0.01" required>
+      </div>
+
+      <div>
+        <label for="desired-profit">Lucro Desejado (%)</label>
+        <input type="number" id="desired-profit" name="desired-profit" min="0" max="100" step="0.01" required>
+      </div>
+
+      <div>
+        <button type="submit">Calcular Preço de Venda</button>
+      </div>
+    </form>
+    <p>Preço de Venda Sugerido: [preço calculado aqui]</p>
+  </main>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+</body>
+</html>
